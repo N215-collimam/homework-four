@@ -8,12 +8,13 @@
     justify-content: space-between;
     position: relative;
     background-color: $site-width;
+    max-width: 50%;
 
     .pics1{
         width:236px;
         height: 304px;
         background-image: url(../images/tour-012.jpg);
-        position: absolute;
+        position: relative;
         
     }
 
@@ -21,16 +22,14 @@
         width:236px;
         height: 304px;
         background-image: url(../images/tour-022.jpg);
-        position: absolute;
-        right: 291px;
+        position: relative;
     }
 
     .pics3{
         width:236px;
         height: 304px;
         background-image: url(../images/tour-032.jpg);
-        position: absolute;
-        left: 582px;
+        position: relative;
     }
 
 
@@ -73,12 +72,21 @@
         }
 }
 
-@media all and (max-width:800px) 
-{
-    .three
-    {
-        display: block; 
-        float: none; 
-        width: 100%;
+@media screen and (max-width: 1420px) {
+    .three{
+        flex-direction: column;
+        
+
+        .pics1{
+            margin-top: 10px;
+        }
+
+        .pics2{
+            margin-top: 10px;
+        }
+
+        .pics3{
+            margin-top: 10px;
+        }
     }
 }

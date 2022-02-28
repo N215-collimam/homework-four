@@ -279,26 +279,25 @@ nav .links span {
           justify-content: space-between;
   position: relative;
   background-color: 980px;
+  max-width: 50%;
 }
 .three .pics1 {
   width: 236px;
   height: 304px;
   background-image: url(../images/tour-012.jpg);
-  position: absolute;
+  position: relative;
 }
 .three .pics2 {
   width: 236px;
   height: 304px;
   background-image: url(../images/tour-022.jpg);
-  position: absolute;
-  right: 291px;
+  position: relative;
 }
 .three .pics3 {
   width: 236px;
   height: 304px;
   background-image: url(../images/tour-032.jpg);
-  position: absolute;
-  left: 582px;
+  position: relative;
 }
 .three .pictext {
   color: white;
@@ -335,16 +334,26 @@ nav .links span {
   border-radius: 25px;
 }
 
-@media all and (max-width: 800px) {
+@media screen and (max-width: 1420px) {
   .three {
-    display: block;
-    float: none;
-    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .three .pics1 {
+    margin-top: 10px;
+  }
+  .three .pics2 {
+    margin-top: 10px;
+  }
+  .three .pics3 {
+    margin-top: 10px;
   }
 }
 .foot {
-  max-width: 980px;
-  height: 80px;
+  max-width: 1280px;
+  min-height: 100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,12 +394,4 @@ nav .links span {
   color: white;
   font-size: 20px;
   padding-right: 125px;
-}
-
-@media all and (max-width: 800px) {
-  .foot {
-    display: block;
-    float: none;
-    width: 100%;
-  }
 }
