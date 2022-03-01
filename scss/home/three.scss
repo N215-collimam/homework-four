@@ -1,6 +1,5 @@
 .three{
     text-align: center;
-    max-width: $home-form-width;
     min-height: 200px;
     margin: $center;
     display: flex;
@@ -9,6 +8,8 @@
     position: relative;
     background-color: $site-width;
     max-width: 50%;
+    margin-top: -40px;
+    
 
     .pics1{
         width:236px;
@@ -75,7 +76,7 @@
 @media screen and (max-width: 1420px) {
     .three{
         flex-direction: column;
-        
+        margin-top: 0px;
 
         .pics1{
             margin-top: 10px;
