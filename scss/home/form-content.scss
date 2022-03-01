@@ -1,7 +1,7 @@
 
 .form-content{
     max-width: $home-form-width;
-    background-color: $site-width;
+    background-color: $site-white;
     min-height: 200px;
     margin: $center;
     margin-top: 100px;
@@ -25,6 +25,10 @@
 
             .long-box{
                 width: 423px;
+            }
+
+            .small-box{
+                width: 344px;
             }
             
             input{
@@ -109,12 +113,13 @@
         align-items: center;
         justify-content: space-between;
         
+        
 
         .holder{
             position:relative;
 
             .long-box{
-                width: 818px;
+                width: $home-form-width;
                 
             }
             
@@ -129,11 +134,10 @@
     }
 
     .submit{
-        position: relative;
+        position: absolute;
         align-items: center;
         justify-content: center;
         margin-top:20px;
-        margin-right: 800px;
 
         .button{
             width: $home-form-width;
@@ -158,8 +162,40 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-    .form-content{
+@media all and (max-width: 850px){
+    .top-boxes{
+        flex-direction: column;
+
+        .long-box{
+            margin-top: 20px;
+            min-width: 700px;
+        }
+
+        .small-box{
+            min-width: 700px;
+        }
+    }  
+
+    .mid-boxes{
         flex-direction: column;
     }
+    
+    .bigbox{
+        .holder{
+            .long-box{
+                margin-left: 6%;
+                max-width: 700px;
+            }
+        }
+    }
+
+    .submit{
+        left: 5%;
+        .button{
+            min-width: 600px;
+            max-width: 700px;
+        }
+    }
 }
+
+

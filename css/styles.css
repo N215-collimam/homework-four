@@ -109,7 +109,7 @@ nav .links span {
 }
 .form-content {
   max-width: 818px;
-  background-color: 980px;
+  background-color: white;
   min-height: 200px;
   margin: 0 auto;
   margin-top: 100px;
@@ -136,6 +136,9 @@ nav .links span {
 }
 .form-content .top-boxes .holder .long-box {
   width: 423px;
+}
+.form-content .top-boxes .holder .small-box {
+  width: 344px;
 }
 .form-content .top-boxes .holder input {
   width: 344px;
@@ -229,7 +232,7 @@ nav .links span {
   border: 3px solid #79addc;
 }
 .form-content .submit {
-  position: relative;
+  position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -237,7 +240,6 @@ nav .links span {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  margin-right: 800px;
 }
 .form-content .submit .button {
   width: 818px;
@@ -256,12 +258,39 @@ nav .links span {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 850px) {
-  .form-content {
+@media all and (max-width: 850px) {
+  .top-boxes {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .top-boxes .long-box {
+    margin-top: 20px;
+    min-width: 700px;
+  }
+  .top-boxes .small-box {
+    min-width: 700px;
+  }
+
+  .mid-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .bigbox .holder .long-box {
+    margin-left: 6%;
+    max-width: 700px;
+  }
+
+  .submit {
+    left: 5%;
+  }
+  .submit .button {
+    min-width: 600px;
+    max-width: 700px;
   }
 }
 .three {
